@@ -1,8 +1,6 @@
 import { ValidationError } from "express-validator";
+import { CoreResponse } from "./Core";
 
-export interface SignInResponse {
-  status: string;
+export interface SignInResponse extends CoreResponse {
   token?: string;
-  message?: string;
-  messages?: ValidationError[];
 }

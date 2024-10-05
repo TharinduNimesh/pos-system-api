@@ -1,4 +1,5 @@
-export interface ErrorResponse {
-  message: string;
+import { CoreResponse } from "./Core";
+
+export interface ErrorResponse extends CoreResponse {
   stack?: string;
 }
